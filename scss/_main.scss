@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,800;1,300&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: 'montserrat', sans-serif !important;
+	font-weight: 300;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	line-height: inherit !important;
+}
+.header{
+	.my-bg-dark{
+		background-color: $bg-color;
+	}
+	.nav-link{
+		color: black !important;
+		font-weight: bold;
+		font-size: 1rem;
+		opacity: 0.7;
+		margin: 0 20px;
+		&:hover{
+			opacity: 1;
+		}
+	}
+	.logo{
+		background-image: url('../media/logo.jpg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 50px;
+		height: 50px;
+		border-radius: 60px;
+		margin-right: 20px;
+	}
+}
+.banner{
+	background-image: url('../media/drone.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 50vh;
+	margin: 50px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	.titulos{
+		font-weight: bold;
+		font-size: 3rem;
+		text-align: center;
+		margin: 10px 15px 0 15px;
+		color: $color2;
+	}
+	.subTitulos{
+		font-size: 2rem;
+		text-align: center;
+		font-weight: bold;
+	}
+}
+.mensajes{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-around;
+	margin-top: 50px;
+	height: 300px;
+	.contenedores{
+		background-color: #bafb8d;
+		height: 210px;
+		width: 300px;
+		border-radius: 60px;
+		display: flex;
+		flex-direction: column;
+		.icon{
+			font-size: 2.5rem;
+			color: $color1;
+			text-align: center;
+			margin-top: 20px;
+		}
+		.titulos{
+			font-size: 3rem;
+			text-align: center;
+			padding: 5px;
+			color: $color1;
+			margin-bottom: 0;
+		}
+		.descripcion{
+			font-size: 1rem;
+			text-align: center;
+			color: $color2;
+		}
+	}
+	
+}
+.info{
+	display: flex;
+	flex-direction: row;
+	background-color: $bg-color;
+	width: 100%;
+	justify-content: center;
+	margin-bottom: 50px;
+	min-height: 150px;
+	align-content: center;
+	.titulos{
+		font-weight: bold;
+		color: $color1;
+		font-size: 3rem;
+		text-align: center;
+		margin: 30px 50px 0 30px;
+		}
+	.datos{
+		font-weight: normal;
+		color: $color2;
+		font-size: 1rem;
+		text-align: center;
+		padding: 5px 50px 30px 30px;
+	}
+	.lineas{
+		border-right: 2px solid white;
+		margin: 30px 0;
+	}
+}
+.footer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	min-height: 100px;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: $bg-color;
+	.texto{
+		color: $color1;
+		font-size: 1.2rem;
+		margin: 0 20px;
+	}
+	img{
+		margin: 0 15px;
+		width: 50px;
+		height: 50px;
+		transition: height 1s, width 1s;
+			&:hover{
+			height: 60px;
+			width: 60px;
+		}
+	}
+	.copy{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		font-size: 1rem;
+		flex-grow: 1;
+		color: $color2;
+	}
+}
+.presentacion1{
+	min-height: 500px;
+	display: flex;
+	flex-direction: row;
+	margin: 50px 20px;
+	.texto{
+		max-width: 50%;
+		min-width: 585px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		font-size: 1.5rem;
+		text-align: justify;
+		margin-right: 20px;
+		.nombre{
+			font-size: 2.8rem;
+			padding-bottom: 15px;
+			font-weight: bold;
+		}
+		.detalle{
+			padding-bottom: 50px;
+			font-size: 1.7rem;
+		}
+	}
+	.fondo{
+		background-image: url('../media/pench.jpg');
+		width: 50%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}	
+}
+.presentacion2{
+	min-height: 500px;
+	display: flex;
+	flex-direction: row-reverse;
+	margin: 50px 20px;
+	.texto{
+		max-width: 50%;
+		min-width: 585px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		font-size: 1.5rem;
+		margin-left: 20px;
+		text-align: justify;
+		.nombre{
+			font-size: 2.8rem;
+			padding-bottom: 15px;
+			font-weight: bold;
+		}
+		.detalle{
+			padding-bottom: 50px;
+			font-size: 1.7rem;
+		}
+	}
+	.fondo{
+		background-image: url('../media/juli.jpg');
+		width: 50%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}	
+}
+.presentacion3{
+	min-height: 500px;
+	display: flex;
+	flex-direction: row;
+	margin: 50px 20px;
+	.texto{
+		max-width: 50%;
+		min-width: 585px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		font-size: 1.5rem;
+		text-align: justify;
+		margin-right: 20px;
+		.nombre{
+			font-size: 2.8rem;
+			padding-bottom: 15px;
+			font-weight: bold;
+		}
+		.detalle{
+			padding-bottom: 50px;
+			font-size: 1.7rem;
+		}
+	}
+	.fondo{
+		background-image: url('../media/gonza.jpg');
+		width: 50%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}	
+}
+.main{
+	flex-grow: 1;
+	.titulo{
+		font-weight: bold;
+		font-size: 3rem;
+		text-align: center;
+		margin: 30px 50px 0 30px; 
+	}
+}
+.servicios{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100%;
+	min-height: 900px;
+	padding-top: 50px;
+	justify-content: space-around;
+	margin-top: 50px;
+	margin-bottom: 0;
+	.caja{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 350px;
+		background-color: $bg-color;
+		max-height: 650px;
+		opacity: 0.8;
+			&:hover{
+			opacity: 1.5; 
+			cursor: pointer;
+			.texto .titulo{
+				font-size: 2.1rem;
+			}
+			}
+		img{
+			width: 350px;
+			display: block;
+			height: 230px;
+		}
+		.texto{
+			font-size: 1.4rem;
+			padding: 0 15px 30px 15px;
+			.titulo{
+				text-align: center;
+				padding: 20px 0;
+				font-size: 1.9rem;
+				color: $color1;
+				font-weight: bold;
+			}
+			.descripcion{
+				padding: 0 15px 30px 15px;
+			}
+		}
+	}
+}
+.servDest{
+	.card{
+		&:hover{
+			cursor: pointer;
+			.card-title{
+				background-color: $color2;
+				color: $color1;
+			}
+		}
+	}
+	.card-title{
+		font-weight: bold;
+	}
+	.myCard-img-top{
+		max-height: 407px;
+	}
+}
+
+.fondo{
+	background-image: url('../media/granos.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.5;
+}
+.formulario{
+	min-height: 100vh;
+	margin-top: 20px;
+	color: $color1;
+	font-weight: bold;
+	input{
+		background-color: transparent;
+	}
+	.text{
+		height: 100px;
+	}
+}
