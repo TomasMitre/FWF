@@ -59,25 +59,25 @@ body{
 		font-weight: bold;
 	}
 }
+@media (max-width: 576px){
+	.banner .titulos{
+		font-size: 2rem;
+	}
+	.banner .subTitulos{
+		font-size: 1.5rem;
+	}
+}
 .mensajes{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 100%;
-	justify-content: space-around;
-	margin-top: 50px;
 	height: 300px;
 	.contenedores{
 		background-color: #bafb8d;
 		height: 210px;
 		width: 300px;
 		border-radius: 60px;
-		display: flex;
-		flex-direction: column;
+		text-align: center;
 		.icon{
 			font-size: 2.5rem;
 			color: $color1;
-			text-align: center;
 			margin-top: 20px;
 		}
 		.titulos{
@@ -93,17 +93,11 @@ body{
 			color: $color2;
 		}
 	}
-	
 }
 .info{
-	display: flex;
-	flex-direction: row;
 	background-color: $bg-color;
-	width: 100%;
-	justify-content: center;
 	margin-bottom: 50px;
 	min-height: 150px;
-	align-content: center;
 	.titulos{
 		font-weight: bold;
 		color: $color1;
@@ -118,41 +112,38 @@ body{
 		text-align: center;
 		padding: 5px 50px 30px 30px;
 	}
-	.lineas{
-		border-right: 2px solid white;
-		margin: 30px 0;
-	}
 }
 .footer{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
 	min-height: 100px;
-	align-items: center;
-	justify-content: flex-start;
 	background-color: $bg-color;
 	.texto{
 		color: $color1;
 		font-size: 1.2rem;
 		margin: 0 20px;
+		font-weight: bold;
 	}
 	img{
 		margin: 0 15px;
-		width: 50px;
-		height: 50px;
-		transition: height 1s, width 1s;
+		width: 40px;
+		height: 40px;
+		transition: height 0.5s, width 0.5s;
 			&:hover{
-			height: 60px;
-			width: 60px;
+			height: 50px;
+			width: 50px;
 		}
 	}
 	.copy{
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-end;
 		font-size: 1rem;
-		flex-grow: 1;
 		color: $color2;
+	}
+}
+@media (max-width: 576px){
+	.footer{
+		min-height: 50px;
+		img{
+			width: 30px;
+			height: 30px;
+		}
 	}
 }
 .presentacion1{
