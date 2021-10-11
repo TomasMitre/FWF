@@ -22,7 +22,7 @@ body {
   font-weight: bold;
   font-size: 1rem;
   opacity: 0.7;
-  margin: 0 20px;
+  margin: 0 15px;
 }
 
 .header .nav-link:hover {
@@ -170,21 +170,13 @@ body {
 
 .presentacion1 {
   min-height: 500px;
-  display: flex;
-  flex-direction: row;
-  margin: 50px 20px;
+  min-width: 500px;
 }
 
 .presentacion1 .texto {
-  max-width: 50%;
   min-width: 585px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
   font-size: 1.5rem;
   text-align: justify;
-  margin-right: 20px;
 }
 
 .presentacion1 .texto .nombre {
@@ -200,28 +192,36 @@ body {
 
 .presentacion1 .fondo {
   background-image: url("../media/pench.jpg");
-  width: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 20px;
+}
+
+@media (max-width: 576px) {
+  .presentacion1 {
+    min-height: 300px;
+    min-width: 300px;
+  }
+  .presentacion1 .texto {
+    font-size: 1.2rem;
+  }
+  .presentacion1 .texto .nombre {
+    font-size: 2.3rem;
+  }
+  .presentacion1 .texto .detalle {
+    font-size: 1.3rem;
+  }
 }
 
 .presentacion2 {
   min-height: 500px;
-  display: flex;
-  flex-direction: row-reverse;
-  margin: 50px 20px;
+  min-width: 500px;
 }
 
 .presentacion2 .texto {
-  max-width: 50%;
   min-width: 585px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
   font-size: 1.5rem;
-  margin-left: 20px;
   text-align: justify;
 }
 
@@ -238,29 +238,37 @@ body {
 
 .presentacion2 .fondo {
   background-image: url("../media/juli.jpg");
-  width: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 20px;
+}
+
+@media (max-width: 576px) {
+  .presentacion2 {
+    min-height: 300px;
+    min-width: 300px;
+  }
+  .presentacion2 .texto {
+    font-size: 1.2rem;
+  }
+  .presentacion2 .texto .nombre {
+    font-size: 2.3rem;
+  }
+  .presentacion2 .texto .detalle {
+    font-size: 1.3rem;
+  }
 }
 
 .presentacion3 {
   min-height: 500px;
-  display: flex;
-  flex-direction: row;
-  margin: 50px 20px;
+  min-width: 500px;
 }
 
 .presentacion3 .texto {
-  max-width: 50%;
   min-width: 585px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
   font-size: 1.5rem;
   text-align: justify;
-  margin-right: 20px;
 }
 
 .presentacion3 .texto .nombre {
@@ -276,10 +284,26 @@ body {
 
 .presentacion3 .fondo {
   background-image: url("../media/gonza.jpg");
-  width: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 20px;
+}
+
+@media (max-width: 576px) {
+  .presentacion3 {
+    min-height: 300px;
+    min-width: 300px;
+  }
+  .presentacion3 .texto {
+    font-size: 1.2rem;
+  }
+  .presentacion3 .texto .nombre {
+    font-size: 2.3rem;
+  }
+  .presentacion3 .texto .detalle {
+    font-size: 1.3rem;
+  }
 }
 
 .main {
@@ -358,6 +382,7 @@ body {
 
 .servDest .card-title {
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .servDest .myCard-img-top {
