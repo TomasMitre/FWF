@@ -156,10 +156,7 @@ body{
 	}
 }
 .presentacion1{
-	min-height: 500px;
-	min-width: 500px;
 	.texto{
-		min-width: 585px;
 		font-size: 1.5rem;
 		text-align: justify;
 		.nombre{
@@ -178,28 +175,28 @@ body{
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-radius: 20px;
+		min-height: 70vh;
 	}	
 }
 @media (max-width: 576px){
 	.presentacion1{
-		min-height: 300px;
-		min-width: 300px;
 		.texto{
 			font-size: 1.2rem;
 			.nombre{
-				font-size: 2.3rem;
+				font-size: 2rem;
 			}
 			.detalle{
 				font-size: 1.3rem;
+				padding-bottom: 5px;
 			}
+		}
+		.fondo{
+			min-height: 50vh;
 		}
 	}
 }
 .presentacion2{
-	min-height: 500px;
-	min-width: 500px;
 	.texto{
-		min-width: 585px;
 		font-size: 1.5rem;
 		text-align: justify;
 		.nombre{
@@ -218,28 +215,29 @@ body{
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-radius: 20px;
+		min-height: 70vh;
 	}	
 }
 @media (max-width: 576px){
 	.presentacion2{
-		min-height: 300px;
-		min-width: 300px;
 		.texto{
 			font-size: 1.2rem;
+			padding-left: 10px !important;
 			.nombre{
-				font-size: 2.3rem;
+				font-size: 2rem;
 			}
 			.detalle{
 				font-size: 1.3rem;
+				padding-bottom: 5px;
 			}
+		}
+		.fondo{
+			min-height: 50vh;
 		}
 	}
 }
 .presentacion3{
-	min-height: 500px;
-	min-width: 500px;
 	.texto{
-		min-width: 585px;
 		font-size: 1.5rem;
 		text-align: justify;
 		.nombre{
@@ -258,20 +256,23 @@ body{
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-radius: 20px;
+		min-height: 70vh;
 	}	
 }
 @media (max-width: 576px){
 	.presentacion3{
-		min-height: 300px;
-		min-width: 300px;
 		.texto{
 			font-size: 1.2rem;
 			.nombre{
-				font-size: 2.3rem;
+				font-size: 2rem;
 			}
 			.detalle{
 				font-size: 1.3rem;
+				padding-bottom: 5px;
 			}
+		}
+		.fondo{
+			min-height: 50vh;
 		}
 	}
 }
