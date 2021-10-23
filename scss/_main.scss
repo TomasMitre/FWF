@@ -50,7 +50,7 @@ body{
 		font-weight: bold;
 		font-size: 3rem;
 		text-align: center;
-		margin: 10px 15px 0 15px;
+		margin-top: 10px;
 		color: $color2;
 	}
 	.subTitulos{
@@ -68,7 +68,7 @@ body{
 	}
 }
 .mensajes{
-	height: 300px;
+	min-height: 300px;
 	.contenedores{
 		background-color: #bafb8d;
 		height: 210px;
@@ -93,11 +93,14 @@ body{
 			color: $color2;
 		}
 	}
-}
+}	
 .info{
 	background-color: $bg-color;
 	margin-bottom: 50px;
 	min-height: 150px;
+	.bordes{
+		border-right: 5px solid $color1;
+	}
 	.titulos{
 		font-weight: bold;
 		color: $color1;
@@ -111,6 +114,12 @@ body{
 		font-size: 1rem;
 		text-align: center;
 		padding: 5px 50px 30px 30px;
+	}
+}
+@media (max-width: 576px){
+	.info .bordes{
+		border-right: 0px solid $color1;
+		border-bottom: 5px solid $color1;
 	}
 }
 .footer{
