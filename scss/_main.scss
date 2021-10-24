@@ -15,6 +15,18 @@ body{
 	.my-bg-dark{
 		background-color: $bg-color;
 	}
+	.navbar-dark .navbar-toggler{
+		border-color: transparent;
+	}
+	.navbar-toggler:focus{
+		box-shadow: none;
+	}
+	.navbar-toggler.collapsed .navbar-toggler-icon{
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1);transform: ;msFilter:;'%3E%3Cpath d='M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z'%3E%3C/path%3E%3C/svg%3E");
+	}
+	.navbar-dark .navbar-toggler-icon{
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1);transform: ;msFilter:;'%3E%3Cpath d='m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z'%3E%3C/path%3E%3C/svg%3E");
+	}
 	.nav-link{
 		color: black !important;
 		font-weight: bold;
@@ -34,6 +46,10 @@ body{
 		height: 50px;
 		border-radius: 60px;
 		margin-right: 20px;
+	}
+	i{
+		color: black;
+		font-size: 2.3rem;
 	}
 }
 .banner{
@@ -59,18 +75,11 @@ body{
 		font-weight: bold;
 	}
 }
-@media (max-width: 576px){
-	.banner .titulos{
-		font-size: 2rem;
-	}
-	.banner .subTitulos{
-		font-size: 1.5rem;
-	}
-}
 .mensajes{
 	min-height: 300px;
 	.contenedores{
-		background-color: #bafb8d;
+		background: rgb(2,0,36);
+		background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(254,246,0,1) 0%, rgba(255,149,0,1) 100%);
 		height: 210px;
 		width: 300px;
 		border-radius: 60px;
@@ -90,7 +99,7 @@ body{
 		.descripcion{
 			font-size: 1rem;
 			text-align: center;
-			color: $color2;
+			color: black;
 		}
 	}
 }	
@@ -109,17 +118,11 @@ body{
 		margin: 30px 50px 0 30px;
 		}
 	.datos{
-		font-weight: normal;
+		font-weight: bold;
 		color: $color2;
 		font-size: 1rem;
 		text-align: center;
 		padding: 5px 50px 30px 30px;
-	}
-}
-@media (max-width: 576px){
-	.info .bordes{
-		border-right: 0px solid $color1;
-		border-bottom: 5px solid $color1;
 	}
 }
 .footer{
@@ -146,15 +149,6 @@ body{
 		color: $color2;
 	}
 }
-@media (max-width: 576px){
-	.footer{
-		min-height: 50px;
-		img{
-			width: 30px;
-			height: 30px;
-		}
-	}
-}
 .presentacion1{
 	.texto{
 		font-size: 1.5rem;
@@ -176,24 +170,8 @@ body{
 		background-size: cover;
 		border-radius: 20px;
 		min-height: 70vh;
+		opacity: 1;
 	}	
-}
-@media (max-width: 576px){
-	.presentacion1{
-		.texto{
-			font-size: 1.2rem;
-			.nombre{
-				font-size: 2rem;
-			}
-			.detalle{
-				font-size: 1.3rem;
-				padding-bottom: 5px;
-			}
-		}
-		.fondo{
-			min-height: 50vh;
-		}
-	}
 }
 .presentacion2{
 	.texto{
@@ -216,25 +194,8 @@ body{
 		background-size: cover;
 		border-radius: 20px;
 		min-height: 70vh;
+		opacity: 1;
 	}	
-}
-@media (max-width: 576px){
-	.presentacion2{
-		.texto{
-			font-size: 1.2rem;
-			padding-left: 10px !important;
-			.nombre{
-				font-size: 2rem;
-			}
-			.detalle{
-				font-size: 1.3rem;
-				padding-bottom: 5px;
-			}
-		}
-		.fondo{
-			min-height: 50vh;
-		}
-	}
 }
 .presentacion3{
 	.texto{
@@ -257,24 +218,8 @@ body{
 		background-size: cover;
 		border-radius: 20px;
 		min-height: 70vh;
+		opacity: 1;
 	}	
-}
-@media (max-width: 576px){
-	.presentacion3{
-		.texto{
-			font-size: 1.2rem;
-			.nombre{
-				font-size: 2rem;
-			}
-			.detalle{
-				font-size: 1.3rem;
-				padding-bottom: 5px;
-			}
-		}
-		.fondo{
-			min-height: 50vh;
-		}
-	}
 }
 .main{
 	flex-grow: 1;
@@ -349,7 +294,6 @@ body{
 		max-height: 407px;
 	}
 }
-
 .fondo{
 	background-image: url('../media/semillas.jpg');
 	background-repeat: no-repeat;
@@ -367,5 +311,82 @@ body{
 	}
 	.text{
 		height: 100px;
+	}
+}
+/*------DECLARACION DE MEDIA QUERIES PARA TODAS LAS SECCIONES------*/
+
+@media (max-width: 576px){
+	.banner .titulos{
+		font-size: 2rem;
+	}
+	.banner .subTitulos{
+		font-size: 1.5rem;
+	}
+	.info .bordes{
+		border-right: 0px solid $color1;
+		border-bottom: 5px solid $color1;
+	}
+	.footer{
+		min-height: 50px;
+		img{
+			width: 30px;
+			height: 30px;
+		}
+	}
+	.presentacion1{
+		.texto{
+			font-size: 1.2rem;
+			.nombre{
+				font-size: 2rem;
+			}
+			.detalle{
+				font-size: 1.3rem;
+				padding-bottom: 5px;
+			}
+		}
+		.fondo{
+			min-height: 50vh;
+		}
+	}
+	.presentacion2{
+		.texto{
+			font-size: 1.2rem;
+			padding-left: 10px !important;
+			.nombre{
+				font-size: 2rem;
+			}
+			.detalle{
+				font-size: 1.3rem;
+				padding-bottom: 5px;
+			}
+		}
+		.fondo{
+			min-height: 50vh;
+		}
+	}
+	.presentacion3{
+		.texto{
+			font-size: 1.2rem;
+			.nombre{
+				font-size: 2rem;
+			}
+			.detalle{
+				font-size: 1.3rem;
+				padding-bottom: 5px;
+			}
+		}
+		.fondo{
+			min-height: 50vh;
+		}
+	}
+	.servDest{
+		.card-title{
+			background-color: $color2;
+			color: $color1;
+			font-size: 1.3rem;
+		}
+	}
+	.main .titulo{
+		font-size: 2.5rem;
 	}
 }
