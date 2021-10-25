@@ -359,6 +359,40 @@ body {
   height: 100px;
 }
 
+.myModal .modal-header {
+  background-color: #e7e2e2;
+}
+
+.myModal .modal-title {
+  font-weight: bold;
+}
+
+.myModal .boton {
+  background-color: red;
+}
+
+.myModal .btn-outline-primary {
+  border-color: #e2b11e;
+}
+
+.myModal .btn-outline-primary:hover {
+  background-color: #e2b11e;
+  border-color: #e2b11e;
+}
+
+.myModal .btn-outline-primary:hover a {
+  color: white;
+}
+
+.myModal a {
+  text-decoration: none;
+  color: #e2b11e;
+}
+
+.myModal a:hover {
+  color: white;
+}
+
 /*------DECLARACION DE MEDIA QUERIES PARA TODAS LAS SECCIONES------*/
 @media (max-width: 576px) {
   .banner .titulos {

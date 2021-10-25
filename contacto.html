@@ -92,12 +92,35 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary col-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Enviar
+                    </button>
                 </div>
-                <div class="col-12">
+                <div class="col-12 mb-5">
                     <button type="reset" class="btn btn-secondary">Borrar datos</button>
                 </div>
             </form> 
+        </div>
+    </div>
+    
+
+    <!-- Modal -->
+    <div class="modal fade myModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">¡Gracias por contactarte con nosotros!</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Responderemos tu consulta a la brevedad
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary"><a href="contacto.html">Hacer otra consulta</a></button>
+                    <button type="button" class="btn btn-outline-primary"><a href="index.html">Volver al inicio</a></button>
+                </div>
+            </div>
         </div>
     </div>
     <!-------FOOTER DEL SITIO------->
