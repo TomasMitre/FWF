@@ -278,8 +278,8 @@ body {
 
 .servicios .caja {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  flex-direction: column;
   width: 350px;
   background-color: #e7e2e2;
   max-height: 650px;
@@ -451,6 +451,14 @@ body {
   }
   .presentacion3 .fondo {
     min-height: 50vh;
+  }
+  .servicios {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .servicios .caja {
+    margin-bottom: 20px;
+    opacity: 1;
   }
   .servDest .card-title {
     background-color: #e2b11e;

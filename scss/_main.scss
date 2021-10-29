@@ -151,8 +151,7 @@ body{
 }
 .presentacion1{
 	.texto{
-		font-size: 1.5rem;
-		text-align: justify;
+		@include textoNosotros(1.5rem, justify);
 		.nombre{
 			font-size: 2.8rem;
 			padding-bottom: 15px;
@@ -165,18 +164,12 @@ body{
 	}
 	.fondo{
 		background-image: url('../media/pench.jpg');
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		border-radius: 20px;
-		min-height: 70vh;
-		opacity: 1;
+		@include fondoNosotros ();
 	}	
 }
 .presentacion2{
 	.texto{
-		font-size: 1.5rem;
-		text-align: justify;
+		@include textoNosotros(1.5rem, justify);
 		.nombre{
 			font-size: 2.8rem;
 			padding-bottom: 15px;
@@ -189,18 +182,12 @@ body{
 	}
 	.fondo{
 		background-image: url('../media/juli.jpg');
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		border-radius: 20px;
-		min-height: 70vh;
-		opacity: 1;
+		@include fondoNosotros ();
 	}	
 }
 .presentacion3{
 	.texto{
-		font-size: 1.5rem;
-		text-align: justify;
+		@include textoNosotros(1.5rem, justify);
 		.nombre{
 			font-size: 2.8rem;
 			padding-bottom: 15px;
@@ -213,12 +200,7 @@ body{
 	}
 	.fondo{
 		background-image: url('../media/gonza.jpg');
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		border-radius: 20px;
-		min-height: 70vh;
-		opacity: 1;
+		@include fondoNosotros ();
 	}	
 }
 .main{
@@ -231,9 +213,7 @@ body{
 	}
 }
 .servicios{
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
+	@include flex(row);
 	width: 100%;
 	min-height: 900px;
 	padding-top: 50px;
@@ -241,9 +221,7 @@ body{
 	margin-top: 50px;
 	margin-bottom: 0;
 	.caja{
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
+		@include flex(column);
 		width: 350px;
 		background-color: $bg-color;
 		max-height: 650px;
@@ -405,6 +383,14 @@ body{
 		}
 		.fondo{
 			min-height: 50vh;
+		}
+	}
+	.servicios{
+		margin-top: 10px;
+		margin-bottom: 20px;
+		.caja{
+			margin-bottom: 20px;
+			opacity: 1;
 		}
 	}
 	.servDest{

@@ -1,0 +1,19 @@
+@mixin textoNosotros($tamanioFuente, $alineacion){
+	font-size: $tamanioFuente;
+	text-align: $alineacion;
+}
+
+@mixin fondoNosotros ($posicion: center, $repeticion: no-repeat, $tamanio: cover, $radioBorde: 20px, $altoMin: 70vh, $opacidad: 1){
+	background-position: $posicion;
+	background-repeat: $repeticion;
+	background-size: $tamanio;
+	border-radius: $radioBorde;
+	min-height: $altoMin;
+	opacity: $opacidad;
+}
+
+@mixin flex ($direccion, $disposicion: flex, $ajuste: wrap){
+	display: $disposicion;
+	flex-wrap: $ajuste;
+	flex-direction: $direccion;
+}
