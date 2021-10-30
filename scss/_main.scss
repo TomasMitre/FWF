@@ -224,7 +224,7 @@ body{
 		@include flex(column);
 		width: 350px;
 		background-color: $bg-color;
-		max-height: 650px;
+		height: 600px;
 		opacity: 0.8;
 			&:hover{
 			opacity: 1.5; 
@@ -240,7 +240,7 @@ body{
 		}
 		.texto{
 			font-size: 1.4rem;
-			padding: 0 15px 30px 15px;
+			padding: 0 15px 0px 15px;
 			.titulo{
 				text-align: center;
 				padding: 20px 0;
@@ -249,7 +249,7 @@ body{
 				font-weight: bold;
 			}
 			.descripcion{
-				padding: 0 15px 30px 15px;
+				padding: 0 15px 0px 15px;
 			}
 		}
 	}
